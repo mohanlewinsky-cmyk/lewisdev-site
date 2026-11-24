@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Viewport" content="width=device-width, initial-scale=1.0">
+<title>LEWIX DEV - TECH WELCOME TO MY SITE</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk;wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    *{margin:0;padding:0;box-sizing:border-box}
+body{background:#030712;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.neon{color:#00e5ff;text-shadow:0 0 20px #00e5ff}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;position:fixed;top:0;left:0;right:0;background:rgba(3,7,18,.85);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid #1e293b}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px}
+.logo span{color:#00e5ff}
+nav a{margin-left:20px;font-size:14px;opacity:.8}
+nav a:hover{color:#00e5ff;opacity:1}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 5% 50px;background:radial-gradient(circle at 80% 20%, rgba(0,229,255,.25), transparent 50%), radial-gradient(circle at 10% 90%, rgba(0,102,255,.2), transparent 50%)}
+.badge{display:inline-block;background:#0e1a2b;border:1px solid #00e5ff;color:#00e5ff;padding:7px 14px;border-radius:100px;font-size:12px;letter-spacing:1px;margin-bottom:20px;width:fit-content}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(42px,9vw,82px);line-height:.95;letter-spacing:-2px}
+.hero h1 span{color:#00e5ff;text-shadow:0 0 30px rgba(0,229,255,.6)}
+.hero p{margin:22px 0 30px;max-width:560px;color:#94a3b8;font-size:17px;line-height:1.6}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:#00e5ff;color:#000;padding:14px 26px;border-radius:100px;font-weight:700;box-shadow:0 0 30px rgba(0,229,255,.5)}
+.btn-ghost{border:1px solid #334155;padding:14px 26px;border-radius:100px;font-weight:600}
+.stats{display:flex;gap:30px;margin-top:45px;flex-wrap:wrap}
+.stats b{font-size:28px;display:block;font-family:'Space Grotesk',sans-serif}
+.stats span{color:#94a3b8;font-size:13px}
+section{padding:70px 5%}
+h2{font-family:'Space Grotesk',sans-serif;font-size:32px;margin-bottom:10px}
+.sub{color:#94a3b8;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:#0b1220;border:1px solid #1e293b;border-radius:20px;padding:24px}
+.card:hover{border-color:#00e5ff;transform:translateY(-3px);transition:.2s}
+.card h3{margin:12px 0 8px;font-size:19px}
+.card p{color:#94a3b8;font-size:14px;line-height:1.6}
+.tag{display:inline-block;background:#082f3a;color:#00e5ff;padding:4px 10px;border-radius:100px;font-size:11px;margin:4px 4px 0 0}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#0b1220;border:1px solid #1e293b;padding:10px 18px;border-radius:100px;font-size:14px}
+.skill b{color:#00e5ff}
+.contact{background:linear-gradient(135deg,#00e5ff,#0066ff);color:#000;border-radius:24px;padding:40px;text-align:center}
+.contact h2{color:#000}
+.contact p{color:#082f3a;margin:10px 0 24px}
+.contact a{background:#000;color:#fff;padding:15px 30px;border-radius:100px;display:inline-block;font-weight:700}
+footer{text-align:center;padding:30px;color:#64748b;font-size:13px;border-top:1px solid #1e293b}
+@media(max-width:600px){nav a{display:none}}
+</style>
+</head>
+<body>
+    
+<nav>
+    <div class="logo">LEWIS<span>DEV</span> - TECH</div>
+    <div><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav>
+
+<div class="hero">
+    <div class="badge">AVAILABLE FOR PROJECTS</div>
+    <h1>LEWIS DEV<br><span>- TECH</span></h1>
+    <p>I build <b style="color:#fff">Apps & Websites</b> that actually work. From Nairobi to the world. No theory, just real projects.</p>
+    <div class="btns">
+        <a class="btn-primary" href="#projects">View My Work</a>
+        <a class="btn-ghost" href="https://wa.me/254798749059" target="_blank">Chat on WhatsApp</a>
+        </div>
+        <div class="stats">
+            <div><b>5+</b><span>Projects Built</span></div>
+            <div><b>100%</b><span>Self-Taught</span></div>
+            <div><b>24/7</b><span>Building</span></div>
+        </div>
+        </div>
+
+        <section id="projects">
+            <h2>My Projects 🔥</h2>
+            <p class="sub">Real things I built, not just ideas.</p>
+            <div class="grid">
+             <div class="card">
+                <div style="font-size:32px">💻</div>
+                <h3>Lewix WhatsApp Bot</h3>
+                <p>Bot that plays music, makes stickers, tags everyone, and replies instantly. Built with Node.js + whatsapp-web.js</p>
+                <span class="tag">Node.js</span><span class="tag">WhatsApp API</span>><span class="tag">.play Music</span>
+                </div>
+                <div class="card">
+                    <div style="font-size:32px"></div>
+                    <h3>Members App</h3>
+                    <p>Manage members for Young Life Ngara. Add members, see list, keep it organized.</p>
+                    <span class="tag">APP</span><span class="tag">JavaScript</span>
+                </div>
+                <div class="card">
+                    <div style="font-size:32px">✅</div>
+                    <h3>Attendance App</h3>
+                    <p>Tap ✅ if someone came to meeting. Counts "12 Present Today" automatically.</p>
+                    <span class="tag">APP</span><span class="tag">Checkboxes</span>
+                </div>
+                <div class="card">
+                    <div style="font-size:32px"></div>
+                    <h3>This Website</h3>
+                    <p>You're looking at it! Black + Neon Blue portfolio. Built from scratch in one HTML file.</p>
+                    <span class="tag">HTML</span><span class="tag">CSS</span>
+                 </div>
+                </div>
+               </section>
+
+               <section id="skills">
+                <h2>What I Do</h2>
+                <p class="sub">If you need it, I can build it.</p>
+                <div class="skills">
+                    <div class="skill"><b>🤖</b> WhatsApp Bots</div>
+                    <div class="skill"><b>🌐</b> Websites</div>
+                    <div class="skill"><b>📱</b> Web Apps</div>
+                    <div class="skill"><b>🎵</b> Music Downloaders</div>
+                    <div class="skill"><b>🏷</b> Sticker Makers</div>
+                    <div class="skill"><b>⚡</b> Node.js</div>
+                </div>
+               </section
+               
+               <section id="contact">
+                <div class="contact">
+                    <h2>Let's Build Something!</h2>
+                    <p>Want a bot, website or app for you business, church or group? Let's talk.</p>
+                    <a href="https://wa.me/254798749059" target="_blank">💬 Message Me on WhatsApp</a>
+                    <p style="margin-top:18px;font-size:13px;color:#082f3a">Nairobi, kenya . Reply within 1 hour</p>
+
+               </section>
+
+               <footer>&copy; 2026 Lewis Dev - Tech Built With ❤ in Nairobi Black + Neon Blue</footer>
+                
+               </body>
+               </html>
+
+
